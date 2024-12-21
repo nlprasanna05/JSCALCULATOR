@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-appearance: none; 
+    appearance: none;
+}
+
+::placeholder {
+    color: rgb(221, 221, 221);
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(20, 19, 19); 
+}
+
+h1 {
+    margin-bottom: 1.5%;
+    color: #fff;
+    font-weight: normal;
+}
+
+.container {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    margin-bottom: 4px;
+}
+
+.first-row {
+    width: 320px; 
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+
+input {
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 70px;
+    background-color: rgb(47, 51, 50); 
+    border: none;
+    outline: none;
+    border-radius: 0; 
+    margin: 0.2em;
+}
+
+input[type="text"] {
+    background-color: rgb(47, 51, 50); 
+    width: 100%;
+}
+
+#result {
+    width: 100%; 
+    text-align: right;
+    margin-left: 0; 
+    align-self: flex-start; 
+}
+
+input[type="button"]:hover {
+    background-color: rgb(48, 177, 48);
+    color: #fff;
+}
+
+input[value="DEL"] {
+    color: red;
+}
+
+input[value="+"],
+input[value="-"],
+input[value="*"],
+input[value="/"],
+input[value="%"] {
+    color: orange; 
+}
+
+input[value="="] {
+    color: rgb(1, 250, 1);
+}
+
+input[value="AC"] {
+    color: orange; 
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
